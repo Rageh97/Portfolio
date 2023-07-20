@@ -8,7 +8,7 @@ const Projects = () => {
     <section id="PROJECTS" className="p-2">
       <Container className="mt-5 mb-5">
         <Row>
-          <h3 className="text-center mb-2 text">PROJECTS</h3>
+          <h3 className="text-center mb-4 text">PROJECTS</h3>
           <Col className="d-flex flex-wrap align-items-center justify-content-center ">
             <Card
               title={"Amazon Clone"}
