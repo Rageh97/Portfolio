@@ -12,9 +12,16 @@ const Footer = () => {
           <h3 className="text-white mt-5">Reach Out to me!</h3>
 
           <div className="social-icons mt-3">
-            <BsLinkedin className="bg-primary p-2 mx-1 rounded fs-2 shadow text-white" />
-            <BsGithub className="bg-dark p-2 fs-2 mx-1 rounded shadow text-white" />
-            <MdOutgoingMail className="bg-danger p-2 mx-1 rounded fs-2 shadow text-white" />
+            <a href="https://www.linkedin.com/in/mohamed-rageh-5b2144221/">
+              <BsLinkedin className="bg-primary p-2 mx-1 rounded fs-2 shadow text-white" />
+            </a>
+            <a href="https://github.com/Rageh97">
+              <BsGithub className="bg-dark p-2 fs-2 mx-1 rounded shadow text-white" />
+            </a>
+            <a href="mailto:abdelhady412rageh@gmail.com">
+              <MdOutgoingMail className="bg-danger p-2 mx-1 rounded fs-2 shadow text-white" />
+            </a>
+
             <IoLogoWhatsapp className="bg-success p-2 mx-1 rounded fs-2 shadow text-white" />
           </div>
         </Col>

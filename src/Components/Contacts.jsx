@@ -1,29 +1,42 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-
+import "../App.css"
 const Contacts = () => {
   const [formStatus, setFormStatus] = React.useState("Send");
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     setFormStatus("Submitting...");
     const { name, email, message } = e.target.elements;
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    console.log(conFom);
+    let formData = new FormData();
+    formData.append("name", name.value);
+    formData.append("email", email.value);
+    formData.append("message", message.value);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mrgwbpkv", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setFormStatus("Sending Successfuly !");
+      } else {
+        setFormStatus("Error submitting form");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setFormStatus("Error submitting form");
+    }
   };
+
   return (
     <Container id="CONTACT" className="mt-5 mb-5">
       <Row className="d-flex justify-content-center">
-      <h3 className="text-center text mb-5">CONTACT</h3>
-        {/* <Col xs={12} sm={12} md={6} className="d-flex align-items-center justify-content-center">
-        <img className="w-100" src="/public/assets/giphy (1).gif" alt="" />
-        </Col> */}
-        
+        <h3  className="text-center  text mb-5">CONTACT</h3>
         <Col xs={12} sm={12} md={6} className="d-flex align-items-center justify-content-center">
-       
           <div className="w-100  p-4 shadow-dark shadoww py-5 rounded">
             <form onSubmit={onSubmit}>
               <div className="mb-4 name">
@@ -52,7 +65,7 @@ const Contacts = () => {
                   required
                 />
               </div>
-              <Button className="w-100 dark-button" variant="danger" type="submit">
+              <Button className="w-100 dark-button"  type="submit">
                 {formStatus}
               </Button>
             </form>
