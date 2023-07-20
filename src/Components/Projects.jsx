@@ -5,7 +5,7 @@ import Card from "./Card";
 const Projects = () => {
 
   return (
-    <section id="PROJECTS" className=" p-2">
+    <section id="PROJECTS" className="p-2">
       <Container className="mt-5 mb-5">
         <Row>
           <h3 className="text-center mb-2 text">PROJECTS</h3>

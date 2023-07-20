@@ -26,7 +26,7 @@ export default function Card({
        
           <div className="row card-dark">
             {/* Card 1 */}
-            <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div className="col-sm-12 col-xs-12 col-md-6 col-lg-4 mb-4">
               <div
                 className="card text-dark card-has-bg click-col"
                 style={{ backgroundImage: `url(${imageSrc})` }}
