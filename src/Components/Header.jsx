@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 const Header = () => {
  
-  const cvURL = "/public/assets/Mohamed-Rageh-cv (2).pdf";
+  const cvURL = "/assets/Mohamed-Rageh-cv (2).pdf";
   const [showNumber, setShowNumber] = useState(false);
   const handleNumber = () => {
     setShowNumber(!showNumber);
