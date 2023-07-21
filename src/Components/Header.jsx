@@ -4,13 +4,13 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdDarkMode, MdOutgoingMail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillEye } from "react-icons/ai";
+import { BiSolidDownload } from "react-icons/bi";
 import Animation from "./Animation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Header = () => {
- 
-  const cvURL = "/assets/Mohamed-Rageh-cv (2).pdf";
+  const cvURL = "/public/assets/Mohamed-Rageh-cv (2).pdf";
   const [showNumber, setShowNumber] = useState(false);
   const handleNumber = () => {
     setShowNumber(!showNumber);
@@ -125,23 +125,26 @@ const Header = () => {
                 className="bg-success p-2 mx-1 rounded fs-2 shadow text-white"
               />
             </div>
-            <Button
+          <div className="d-flex align-items-center mt-5 ">
+          <Button
               onClick={handleButtonClick}
-              className="mt-5 dark-button mb-5 mb-md-0 shadow"
+              className="dark-button mb-5 mb-md-0 shadow"
               style={{ width: "150px" }}
-              
             >
-              <a
-                className="text-white text-decoration-none"
-                download
-                href="/public/assets/Cv.png"
-              >
-                {" "}
-                <AiFillEye /> SEE MY CV
-              </a>
+              <AiFillEye /> SEE MY CV
             </Button>
+            <a className="text-dark text-decoration-none mb-5 mx-2 mb-md-0" download href={cvURL}>
+             <BiSolidDownload className="text-danger fs-3"/>
+            </a>
+          </div>
           </Col>
-          <Col className="h-100 d-none d-md-flex" data-aos="fade-left" data-aos-duration="2500" xs={12} md={6}>
+          <Col
+            className="h-100 d-none d-md-flex"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+            xs={12}
+            md={6}
+          >
             <img className="w-100 h-100" src="/assets/banner2.png" alt="" />
           </Col>
         </Row>
