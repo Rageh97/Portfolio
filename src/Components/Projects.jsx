@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <section id="PROJECTS" className="p-2">
       <Container className="mt-5 mb-5">
-        <Row>
           <h3 className="text-center mb-4 text">PROJECTS</h3>
-          <Col className="d-flex flex-wrap align-items-center justify-content-center ">
+        <Row className="d-flex align-items-center justify-content-center">
+          {/* <Col > */}
             <Card
               title={"Amazon Clone"}
               description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
@@ -50,7 +50,7 @@ const Projects = () => {
               description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
               imageSrc={"/assets/React.png"}
             />
-          </Col>
+          {/* </Col> */}
         </Row>
       </Container>
     </section>

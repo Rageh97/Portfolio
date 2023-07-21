@@ -5,6 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillEye } from "react-icons/ai";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Col } from "react-bootstrap";
 export default function Card({
   imageSrc,
   title,
@@ -26,9 +27,17 @@ export default function Card({
        
           {/* <div className="row card-dark"> */}
             {/* Card 1 */}
-            <div className="mx-3 mb-5 card-dark shadow ">
-              <div
-                className="card text-dark card-has-bg click-col"
+            {/* <Col data-aos="zoom-in-down" data-aos-duration = "2500" className="mx-3 mb-5 card-dark shadow "> */}
+              <Col
+              xs={11}
+              sm={11}
+              md={5}
+              lg={5}
+              xl={3}
+              xxl={3}
+              
+              data-aos="zoom-in-down" data-aos-duration = "2500"
+                className="card text-dark card-has-bg click-col card-dark shadow mx-3 mb-5 offset-1"
                 style={{ backgroundImage: `url(${imageSrc})` }}
               >
                 <img
@@ -55,8 +64,8 @@ export default function Card({
                     </a>
                   </div>
                 </div>
-              </div>
-            </div>
+              </Col>
+            {/* </Col> */}
             {/* Add more cards here */}
           {/* </div> */}
         {/* </div> */}
