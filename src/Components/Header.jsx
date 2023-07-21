@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Header = () => {
+ 
   const cvURL = "/public/assets/Cv.png";
   const [showNumber, setShowNumber] = useState(false);
   const handleNumber = () => {
@@ -44,7 +45,7 @@ const Header = () => {
       {dark && <Animation />}
       <Container>
         <Row className="py-4">
-          <Col>
+          <Col xs={9} lg={6}>
             <h3
               style={{ letterSpacing: "2px", cursor: "pointer" }}
               className="logo text"
@@ -52,7 +53,7 @@ const Header = () => {
               Mohamed Rageh
             </h3>
           </Col>
-          <Col>
+          <Col xs={2} lg={6}>
             <div className="d-flex gap justify-content-center">
               <h6
                 style={{ cursor: "pointer" }}
@@ -92,7 +93,7 @@ const Header = () => {
             md={6}
             className="defineation mt-5 d-flex flex-column justify-content-center"
           >
-            <h3 className="text">Front End Developer</h3>
+            <h3 className="text">Frontend Developer</h3>
             <p className="text-2">
               I am a Front End Developer with experience in building web
               applications using technologies like React, Redux, Next.js, and
@@ -103,7 +104,7 @@ const Header = () => {
               {showNumber && (
                 <p
                   style={{ letterSpacing: "2px", cursor: "pointer" }}
-                  className="bg-success p-1 text-white text-center rounded shadow w-25"
+                  className="bg-success p-1 text-white text-center rounded shadow w-50"
                 >
                   01065330985
                 </p>

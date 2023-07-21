@@ -37,7 +37,7 @@ export default function Card({
               xxl={3}
               
               data-aos="zoom-in-down" data-aos-duration = "2500"
-                className="card text-dark card-has-bg click-col card-dark shadow mx-3 mb-5 offset-1"
+                className="card text-dark card-has-bg click-col  card-dark shadow mx-3 mb-5 offset-1"
                 style={{ backgroundImage: `url(${imageSrc})` }}
               >
                 <img
@@ -51,15 +51,15 @@ export default function Card({
                     <small className="card-meta mb-2 text-white">{description}</small>
                   </div>
 
-                  <div className="button-box d-flex gap">
-                    <a href={githubLink}>
-                      <button className="purchase mb-0">
-                        <BsGithub className=" " /> CODE
+                  <div style={{height:"40px"}} className="button-box d-flex align-items-center justify-content-center gap ">
+                    <a  className="mb-2 h-100 text-decoration-none" href={githubLink}>
+                      <button className="purchase mb-0 h-100 d-flex">
+                        <BsGithub className=" fs-5 me-2" /> CODE
                       </button>
                     </a>
-                    <a href={demoLink}>
-                      <button className="purchase mb-0">
-                        <AiFillEye className="fs-5 " /> LIVE DEMO
+                    <a  className="mb-2 h-100 text-decoration-none" href={demoLink}>
+                      <button className="purchase mb-0 h-100 d-flex">
+                        <AiFillEye className="fs-5 me-2" />DEMO
                       </button>
                     </a>
                   </div>

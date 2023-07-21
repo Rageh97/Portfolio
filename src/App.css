@@ -6,6 +6,12 @@
   font-family: "Rubik", sans-serif;
   /* overflow-x: hidden; */
 }
+.text {
+  color: var(--semi-dark);
+}
+.text-2 {
+  color: var(--light-text);
+}
 :root {
   --dark-text: #bbe1fa;
   --color-1: #EC6EAD;
@@ -31,6 +37,10 @@
 }
 .logo {
   font-family: "Kalam", cursive;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(25deg, #ff00cc, #333399);
 }
 a {
   text-decoration: none;
@@ -108,9 +118,11 @@ a {
 .button-box {
   width: 100%;
 }
+
 .purchase {
   cursor: pointer;
   width: 100%;
+  
   border-radius: 30px;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -963,7 +975,7 @@ div:last-of-type {
     color: var(--dark-text);
   }
   .text-2 {
-    color: var(--light-text);
+    color: var(--color-3);
   }
   .projects {
     background-color: var(--semi-dark);
