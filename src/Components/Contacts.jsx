@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "../App.css"
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdOutgoingMail } from "react-icons/md";
+import "../App.css";
+import Main from "./Main";
 const Contacts = () => {
   const [formStatus, setFormStatus] = React.useState("Send");
   const onSubmit = async (e) => {
@@ -33,46 +37,57 @@ const Contacts = () => {
   };
 
   return (
-    <Container id="CONTACT" className="mt-5 mb-5">
-      <Row className="d-flex justify-content-center">
-        <h3  className="text-center  text mb-5">CONTACT</h3>
-        <Col xs={12} sm={12} md={6} className="d-flex align-items-center justify-content-center">
-          <div className="w-100  p-4 shadow-dark shadoww py-5 rounded">
-            <form onSubmit={onSubmit}>
-              <div className="mb-4 name">
-                <input
-                  placeholder="Name"
-                  className="neumer-input"
-                  type="text"
-                  id="name"
-                  required
-                />
-              </div>
-              <div className="mb-4 email">
-                <input
-                  placeholder="Email"
-                  className="neumer-input"
-                  type="email"
-                  id="email"
-                  required
-                />
-              </div>
-              <div className="mb-4 message">
-                <textarea
-                  placeholder="Your Message"
-                  className="neumer-input"
-                  id="message"
-                  required
-                />
-              </div>
-              <Button className="w-100 dark-button"  type="submit">
-                {formStatus}
-              </Button>
-            </form>
+    <>
+    <Main/>
+      <div className="w-100 mt-5">
+        <form onSubmit={onSubmit}>
+          <div className="mb-4 name">
+            <input
+              placeholder="Name"
+              className="neumer-input"
+              type="text"
+              id="name"
+              required
+            />
           </div>
-        </Col>
-      </Row>
-    </Container>
+          <div className="mb-4 email">
+            <input
+              placeholder="Email"
+              className="neumer-input"
+              type="email"
+              id="email"
+              required
+            />
+          </div>
+
+          <div className="mb-4 message">
+            <textarea
+              placeholder="Your Message"
+              className="neumer-input"
+              id="message"
+              required
+            />
+          </div>
+          <Button className="w-100 dark-button" type="submit">
+            {formStatus}
+          </Button>
+        </form>
+      </div>
+      {/* .......................... */}
+      <div className="social-icons mt-3">
+        {" "}
+        <a href="https://www.linkedin.com/in/mohamed-rageh-5b2144221/">
+          <BsLinkedin className="bg-primary p-2 mx-1 rounded fs-2 shadow text-white" />
+        </a>
+        <a href="https://github.com/Rageh97">
+          <BsGithub className="bg-dark p-2 fs-2 mx-1 rounded shadow text-white" />
+        </a>
+        <a href="mailto:abdelhady412rageh@gmail.com">
+          <MdOutgoingMail className="bg-danger p-2 mx-1 rounded fs-2 shadow text-white" />
+        </a>
+        <IoLogoWhatsapp className="bg-success p-2 mx-1 rounded fs-2 shadow text-white" />
+      </div>
+    </>
   );
 };
 

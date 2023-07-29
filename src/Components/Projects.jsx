@@ -1,15 +1,17 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Card from "./Card";
+import Main from "./Main";
 
 const Projects = () => {
-
   return (
-    <section id="PROJECTS" className="p-2">
-      <Container className="mt-5 mb-5">
+    <>
+      <Main />
+      <section id="PROJECTS" className="p-2">
+        <Container className="mt-5 mb-5">
           <h3 className="text-center mb-4 text">PROJECTS</h3>
-        <Row className="d-flex align-items-center justify-content-center">
-          {/* <Col > */}
+          <Row className="d-flex align-items-center justify-content-center">
+            {/* <Col > */}
             <Card
               title={"Amazon Clone"}
               description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
@@ -50,10 +52,11 @@ const Projects = () => {
               description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
               imageSrc={"/assets/React.png"}
             />
-          {/* </Col> */}
-        </Row>
-      </Container>
-    </section>
+            {/* </Col> */}
+          </Row>
+        </Container>
+      </section>
+    </>
   );
 };
 
