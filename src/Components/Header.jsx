@@ -159,17 +159,17 @@ import { MdEmail, MdLocationPin } from "react-icons/md";
 import { BsFillPhoneFill, BsLinkedin } from "react-icons/bs";
 const Header = () => {
   return (
-    <div className="d-flex flex-column px-3 py-5">
-      <div className="w-100  d-flex flex-column align-items-center">
+    <div className="d-flex flex-column w-100  px-2 py-3">
+      <div className="w-100  d-flex flex-column align-items-center justify-content-center">
         <img
-          style={{ height: "150px", objectFit: "cover" }}
+          style={{ height: "170px", objectFit: "cover" }}
           className="w-100 rounded-4"
           src="/assets/Profile-pic.jpg"
           alt=""
         />
         <h6   style={{ fontSize:"18px" }} className="text-white  fw-bold mt-4 mb-3">Mohamed Rageh</h6>
         <p
-          style={{ backgroundColor: "#323232", fontSize:"15px" }}
+          style={{ backgroundColor: "#6131df", fontSize:"15px" }}
           className=" w-100 text-white text-center px-1 py-2 rounded "
         >
           Frontend Developer
@@ -177,9 +177,9 @@ const Header = () => {
       </div>
       <hr className=" text-white" />
       <div className="w-100 d-flex flex-column">
-        <div className="d-flex align-items-center mb-4">
-          <div className="px-2 py-1 rounded icon me-2">
-            <MdEmail className="text_orange fs-4 " />
+        <div className="d-flex w-100 align-items-center mb-4">
+          <div className="px-2  py-1 rounded icon me-2">
+            <MdEmail className="text-white fs-4 " />
           </div>
           <div className="d-flex flex-column justify-content-center">
             <p style={{ fontSize: "14px" }} className="mb-0 text_orange">
@@ -192,7 +192,7 @@ const Header = () => {
         </div>
         <div className="d-flex align-items-center mb-4">
           <div className="px-2 py-1 rounded icon me-2">
-            <BsFillPhoneFill className="text_orange fs-4 " />
+            <BsFillPhoneFill className="text-white fs-4 " />
           </div>
           <div className="d-flex flex-column justify-content-center">
             <p style={{ fontSize: "14px" }} className="mb-0 text_orange">
@@ -205,7 +205,7 @@ const Header = () => {
         </div>
         <div className="d-flex align-items-center mb-4">
           <div className="px-2 py-1 rounded icon me-2">
-            <BsLinkedin className="text_orange fs-4 " />
+            <BsLinkedin className="text-white fs-4 " />
           </div>
           <div className="d-flex flex-column justify-content-center">
             <p style={{ fontSize: "14px" }} className="mb-0 text_orange">
@@ -218,7 +218,7 @@ const Header = () => {
         </div>
         <div className="d-flex align-items-center mb-4">
           <div className="px-2 py-1 rounded icon me-2">
-            <MdLocationPin className="text_orange fs-4 " />
+            <MdLocationPin className="text-white fs-4 " />
           </div>
           <div className="d-flex flex-column justify-content-center">
             <p style={{ fontSize: "14px" }} className="mb-0 text_orange">

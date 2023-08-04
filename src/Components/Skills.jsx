@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Main from "./Main";
 import { skills } from "../../utils/Constants";
+import MobileFooter from "./MobileFooter";
+
 const Skills = () => {
   useEffect(() => {
     AOS.init();
@@ -12,10 +14,16 @@ const Skills = () => {
   return (
     <>
       <Main />
+      <MobileFooter/>
       {/* <Container style={{ marginBottom: "200px" }} className="mt-5">
         <Row>
           <Col className="d-flex flex-wrap align-items-center justify-content-center gap"> */}
-      <div className="d-flex gap-5 align-items-center flex-wrap mt-5">
+      <div
+       data-aos="fade-up"
+       data-aos-duration="2500"
+        // style={{ marginTop: "120px", marginLeft: "120px", marginBottom:"50px" }}
+        className="d-flex w-100 gap-5 mt-5 mb-5 align-items-center justify-content-center flex-wrap"
+      >
         {skills.map((item, idx) => (
           <>
             <div
@@ -23,16 +31,11 @@ const Skills = () => {
               className="d-flex flex-column gap-3 align-items-center"
             >
               <div
-                data-aos="fade-up"
-                data-aos-duration="2500"
-                className="p-3 bg_orange d-flex  align-items-center"
+               
+                className="p-3 bg-white text_dark d-flex  align-items-center justify-content-center"
                 style={{ width: "80px", height: "80px", borderRadius: "50%" }}
               >
-                <img
-                  className="w-100 h-100 object-fit-contain"
-                  src={item.image}
-                  alt=""
-                />
+                {item.icon}
               </div>
               <p className="text-white">{item.title}</p>
             </div>

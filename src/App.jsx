@@ -7,27 +7,29 @@ import Animation from "./Components/Animation";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./Components/About";
 import Contacts from "./Components/Contacts";
-import Projects from './Components/Projects';
+import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
+import MobileHeader from "./Components/MobileHeader";
 
 const App = () => {
   return (
     <>
-    {/* <Animation/> */}
-      <div className="container mt-5 ">
-        <div className="row ">
-          <div className="col-12 col-sm-2 mx-5  container-content">
+      <div className="container  mt-2 mt-lg-5 p-4">
+        <div className="row d-block d-sm-flex">
+          <div className=" col-2 mx-0 mx-xl-2 d-none d-xl-flex container-content-side">
             <Header />
           </div>
-          <div className="col-9  container-content">
-           
+          <div className=" col-12 d-flex d-xl-none mb-3 container-content-side">
+            <MobileHeader />
+          </div>
+          <div className=" col-12 mx-0 mx-xl-2 col-xl-9 container-content">
             <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<About />}/>
-              <Route path="/contact" element={<Contacts />}/>
-              <Route path="/projects" element={<Projects />}/>
-              <Route path="/skills" element={<Skills />}/>
-            </Routes>
+              <Routes>
+                <Route path="/" element={<About />} />
+                <Route path="/contact" element={<Contacts />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/skills" element={<Skills />} />
+              </Routes>
             </BrowserRouter>
           </div>
         </div>

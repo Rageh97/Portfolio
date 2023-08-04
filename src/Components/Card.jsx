@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 
 import { BsGithub } from "react-icons/bs";
 import { AiFillEye } from "react-icons/ai";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Col } from "react-bootstrap";
 export default function Card({
   imageSrc,
@@ -13,7 +13,6 @@ export default function Card({
   githubLink,
   demoLink,
 }) {
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -21,55 +20,30 @@ export default function Card({
 
   return (
     <>
-     
-      {/* <section data-aos="zoom-in-down" data-aos-duration = "2500" className="wrapper shadow"> */}
-        {/* <div className="container"> */}
-       
-          {/* <div className="row card-dark"> */}
-            {/* Card 1 */}
-            {/* <Col data-aos="zoom-in-down" data-aos-duration = "2500" className="mx-3 mb-5 card-dark shadow "> */}
-              <Col
-              xs={11}
-              sm={11}
-              md={5}
-              lg={5}
-              xl={3}
-              xxl={3}
-              
-              data-aos="zoom-in-down" data-aos-duration = "2500"
-                className="card text-dark card-has-bg click-col  card-dark shadow mx-3 mb-5 offset-1"
-                style={{ backgroundImage: `url(${imageSrc})` }}
-              >
-                <img
-                  className="card-img d-none"
-                  src={imageSrc}
-                  alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?"
-                />
-                <div className="card-img-overlay d-flex flex-column">
-                  <div className="card-body">
-                    <h4 className="card-title mt-0  text-white">{title}</h4>
-                    <small className="card-meta mb-2 text-white">{description}</small>
-                  </div>
+      <div data-aos="zoom-in-down" data-aos-duration="2500" className="card mb-3">
+        <img
+          className="w-100 card-img mb-1"
+          src={imageSrc}
+          alt="Creative Manner Design Lorem Ipsum Sit Amet Consectetur dipisi?"
+        />
 
-                  <div style={{height:"40px"}} className="button-box d-flex align-items-center justify-content-center gap ">
-                    <a  className="mb-2 h-100 text-decoration-none" href={githubLink}>
-                      <button className="purchase mb-0 h-100 d-flex">
-                        <BsGithub className=" fs-5 me-2" /> CODE
-                      </button>
-                    </a>
-                    <a  className="mb-2 h-100 text-decoration-none" href={demoLink}>
-                      <button className="purchase mb-0 h-100 d-flex">
-                        <AiFillEye className="fs-5 me-2" />DEMO
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-            {/* </Col> */}
-            {/* Add more cards here */}
-          {/* </div> */}
-        {/* </div> */}
-      {/* </section> */}
+        <h5 className="card-title mt-1 mx-2 text-white">{title}</h5>
+        {/* <small className="card-meta  text-white">{description}</small> */}
+
+        <div className="card-footer w-100 d-flex border-0 gap-3">
+          <a className=" text-decoration-none text_orange" href={githubLink}>
+            <div className="d-flex gap-2">
+              <BsGithub className=" fs-5 " /> CODE
+            </div>
+          </a>
+          <a className="  text-decoration-none text_orange" href={demoLink}>
+            <div className="d-flex gap-2">
+              <AiFillEye className="fs-4 " />
+              DEMO
+            </div>
+          </a>
+        </div>
+      </div>
     </>
   );
 }
