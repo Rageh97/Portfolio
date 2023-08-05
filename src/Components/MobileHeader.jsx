@@ -20,8 +20,8 @@ function CustomToggle({ children, eventKey }) {
         backgroundColor: "transparent",
         border: "none",
         position: "absolute",
-        top: "0",
-        right: "0",
+        top: "-6px",
+        right: "-14px",
       }}
       onClick={decoratedOnClick}
     >
@@ -32,114 +32,29 @@ function CustomToggle({ children, eventKey }) {
 const MobileHeader = () => {
   return (
     <div className="mobile_header position-relative d-flex d-xl-none w-100">
-      {/* <div className="d-block">
-        <div className="d-flex align-items-center  gap-3">
-          <div>
-            <img
-              style={{ height: "120px", objectFit: "cover" }}
-              className="w-100 rounded-4"
-              src="/assets/Profile-pic.jpg"
-              alt=""
-            />
-          </div>
-          <div className="d-flex flex-column">
-            <h6
-              style={{ fontSize: "18px" }}
-              className="text-white  fw-bold mt-4 mb-3"
-            >
-              Mohamed Rageh
-            </h6>
-            <p
-              style={{ backgroundColor: "#6131df", fontSize: "15px" }}
-              className=" w-100 text-white text-center px-1 py-2 rounded "
-            >
-              Frontend Developer
-            </p>
-          </div>
-          <div>
-         
-          </div>
-        </div>
-
-
-        <div className="d-flex flex-column mt-4">
-          <div className="d-flex w-100 align-items-center mb-4">
-            <div className="px-2  py-1 rounded icon me-2">
-              <MdEmail className="text-white fs-4 " />
-            </div>
-            <div className="d-flex flex-column justify-content-center">
-              <p style={{ fontSize: "14px" }} className="mb-0 text_orange">
-                Email
-              </p>
-              <span style={{ fontSize: "9px" }} className="mb-0 text-white">
-                abdelhady412rageh@gmail.com
-              </span>
-            </div>
-          </div>
-          <div className="d-flex align-items-center mb-4">
-            <div className="px-2 py-1 rounded icon me-2">
-              <BsFillPhoneFill className="text-white fs-4 " />
-            </div>
-            <div className="d-flex flex-column justify-content-center">
-              <p style={{ fontSize: "14px" }} className="mb-0 text_orange">
-                Phone
-              </p>
-              <span style={{ fontSize: "14px" }} className="mb-0 text-white">
-                +201065330985
-              </span>
-            </div>
-          </div>
-          <div className="d-flex align-items-center mb-4">
-            <div className="px-2 py-1 rounded icon me-2">
-              <BsLinkedin className="text-white fs-4 " />
-            </div>
-            <div className="d-flex flex-column justify-content-center">
-              <p style={{ fontSize: "14px" }} className="mb-0 text_orange">
-                Linkedin
-              </p>
-              <span style={{ fontSize: "11px" }} className="mb-0 text-white">
-                /in/mohamed-rageh-5b2144221/
-              </span>
-            </div>
-          </div>
-          <div className="d-flex align-items-center mb-4">
-            <div className="px-2 py-1 rounded icon me-2">
-              <MdLocationPin className="text-white fs-4 " />
-            </div>
-            <div className="d-flex flex-column justify-content-center">
-              <p style={{ fontSize: "14px" }} className="mb-0 text_orange">
-                Location
-              </p>
-              <span style={{ fontSize: "14px" }} className="mb-0 text-white">
-                Cairo, Egypt
-              </span>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* ..........ACCOR */}
+    
       <Accordion className="w-100" defaultActiveKey="1">
         <Card className="w-100">
-          <Card.Header>
-            <div className="d-flex align-items-center gap-3">
-              <div>
+          <Card.Header className="w-100">
+            <div className="d-flex align-items-center gap-3 w-100">
+              <div className="profile_img">
                 <img
-                  style={{ height: "120px", objectFit: "cover" }}
+                
                   className="w-100 rounded-4"
                   src="/assets/Profile-pic.jpg"
                   alt=""
                 />
               </div>
-              <div className="d-flex flex-column">
+              <div className="d-flex flex-column who_iam">
                 <h6
-                  style={{ fontSize: "18px" }}
-                  className="text-white  fw-bold mt-4 mb-3"
+                 
+                  className="text-white  fw-bold mt-4 mb-3 w-100"
                 >
                   Mohamed Rageh
                 </h6>
                 <p
-                  style={{ backgroundColor: "#6131df", fontSize: "15px" }}
-                  className=" w-100 text-white text-center px-1 py-2 rounded "
+                  style={{ backgroundColor: "#6131df"}}
+                  className=" w-100 text-white text-center px-1 py-1 rounded "
                 >
                   Frontend Developer
                 </p>
