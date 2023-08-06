@@ -41,7 +41,7 @@ const Projects = () => {
         <Card
           title={"Cars Shopping"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
-          imageSrc={"/assets/facebook.png"}
+          imageSrc={"/assets/cars.png"}
           demoLink={"https://shopping-cars-next-nvmh673sg-rageh97.vercel.app/"}
           githubLink={
             "https://github.com/Rageh97/Shopping_Cars_NextJS"
@@ -50,14 +50,14 @@ const Projects = () => {
         <Card
           title={"Crud operation"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
-          imageSrc={"/assets/facebook.png"}
+          imageSrc={"/assets/crud.png"}
           demoLink={"https://crud-operation-react-js.vercel.app/"}
           githubLink={"https://github.com/Rageh97/Simple_Crud_App-React-js"}
         />
         <Card
           title={"T-shirt Store"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
-          imageSrc={"/assets/facebook.png"}
+          imageSrc={"/assets/cup.png"}
           demoLink={"https://store-app-js.vercel.app/"}
           githubLink={"https://github.com/Rageh97/STORE_APP"}
         />

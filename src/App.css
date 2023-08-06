@@ -163,6 +163,11 @@ canvas#canvas {
    border-radius: 50px;
   }
 }
-
+.card-img:hover{
+ padding: 10px;
+ opacity: 70%;
+  transition: .5s;
+  cursor: pointer;
+}
 /* ........................Animation..................................... */
 

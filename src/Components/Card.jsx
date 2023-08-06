@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillEye } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Col } from "react-bootstrap";
+
 export default function Card({
   imageSrc,
   title,
