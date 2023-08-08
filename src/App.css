@@ -198,7 +198,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .who_iam {
     width: 50%;
   }
@@ -216,11 +216,11 @@ a {
     border-radius: 50px;
   }
 }
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .send_button {
     width: 100%;
   }
-}
+} */
 .card-img:hover {
   padding: 10px;
   opacity: 70%;
