@@ -42,17 +42,21 @@ body {
   left: 0;
   width: 100%;
   background: var(--bg-containers);
-  border-top: 1px solid var(--text-orange);
-
-  border-radius: 20px 20px 0 0;
+  border-top-width: 2px;
+  border-top-style: solid;
+  background: linear-gradient(var(--bg-containers), var(--bg-containers))
+      padding-box,
+    linear-gradient(to right, var(--bg-orange), var(--text-orange)) border-box;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top: 3px solid transparent;
   z-index: 1;
   padding: 10px;
 }
+
 .header_position {
   font-size: 15px;
   background: var(--linear-bg);
- 
-  
 }
 .parent {
   display: flex;
@@ -68,14 +72,15 @@ body {
 }
 .linear_bg {
   background: var(--linear-bg);
-
 }
 .text_orange {
   color: var(--text-orange);
 }
 .text_dark {
   background: var(--linear-bg);
-
+}
+.text_inset{
+  color: #aac8e4;
 }
 
 .bg_orange {
@@ -90,8 +95,12 @@ body {
   /* background: linear-gradient(315deg, var(--text-orange) 25%, var(--bg-orange)); */
   /* background-clip: text; */
   background-color: transparent;
-  border-bottom: 1px solid var(--text-orange);
-  border-radius: 0 0 0 20px;
+  background: linear-gradient(var(--bg-containers), var(--bg-containers))
+      padding-box,
+    linear-gradient(to right, var(--bg-orange), var(--text-orange)) border-box;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom: 3px solid transparent;
 }
 .custom_toggle {
   background: var(--linear-bg);
@@ -182,8 +191,8 @@ a {
   border-radius: 10px;
   background: -webkit-linear-gradient(
     45deg,
-    var(--text-orange),
-    var(--bg-orange)
+   rgb(0, 217, 255),
+   rgb(255, 230, 0)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -194,10 +203,10 @@ a {
     width: 50%;
   }
   .who_iam h6 {
-    font-size: 10px;
+    font-size: 16px;
   }
   .who_iam p {
-    font-size: 8px;
+    font-size: 14px;
   }
 
   .profile_img {
