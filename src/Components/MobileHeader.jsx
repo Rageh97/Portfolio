@@ -17,9 +17,7 @@ function CustomToggle({ children, eventKey }) {
     <button
       type="button"
       className="custom_toggle"
-      style={{
-        
-      }}
+      
       onClick={decoratedOnClick}
     >
       {children}
@@ -41,7 +39,7 @@ const MobileHeader = () => {
                 />
               </div>
               <div className="d-flex flex-column who_iam">
-                <h6 className="text-white  fw-bold mt-4 mb-3 w-100">
+                <h6 className="text-white header_name fw-bold mt-4 mb-3 w-100">
                   Mohamed Rageh
                 </h6>
                 <p className=" w-100 header_position text-white text-center px-1 py-1 rounded ">

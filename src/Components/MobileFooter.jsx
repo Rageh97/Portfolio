@@ -9,7 +9,7 @@ const MobileFooter = () => {
           className={
             window.location.pathname === "/"
               ? " fs-6 text_active"
-              : " fs-6 text-white"
+              : " fs-6 text_inset"
           }
           to={"/"}
         >
@@ -19,7 +19,7 @@ const MobileFooter = () => {
           className={
             window.location.pathname === "/skills"
               ? " fs-6 text_active"
-              : " fs-6 text-white"
+              : " fs-6 text_inset"
           }
           to={"/skills"}
         >
@@ -29,7 +29,7 @@ const MobileFooter = () => {
           className={
             window.location.pathname === "/projects"
               ? " fs-6 text_active"
-              : " fs-6 text-white"
+              : " fs-6 text_inset"
           }
           to={"/projects"}
         >
@@ -39,7 +39,7 @@ const MobileFooter = () => {
           className={
             window.location.pathname === "/contact"
               ? " fs-6 text_active"
-              : " fs-6 text-white"
+              : " fs-6 text_inset"
           }
           to={"/contact"}
         >
