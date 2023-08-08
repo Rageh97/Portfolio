@@ -23,8 +23,18 @@ const Main = () => {
         <div className="main_header d-none d-md-flex align-items-center">
           <Link
             className={
+              window.location.pathname === "/"
+                ? "mx-4 fs-5 text-dark"
+                : "mx-4 fs-5 text-white"
+            }
+            to={"/"}
+          >
+            About me
+          </Link>
+          <Link
+            className={
               window.location.pathname === "/skills"
-                ? "mx-4 fs-5 text-warning"
+                ? "mx-4 fs-5 text-dark"
                 : "mx-4 fs-5 text-white"
             }
             to={"/skills"}
@@ -33,18 +43,8 @@ const Main = () => {
           </Link>
           <Link
             className={
-              window.location.pathname === "/contact"
-                ? "mx-4 fs-5 text-warning"
-                : "mx-4 fs-5 text-white"
-            }
-            to={"/contact"}
-          >
-            Contact
-          </Link>
-          <Link
-            className={
               window.location.pathname === "/projects"
-                ? "mx-4 fs-5 text-warning"
+                ? "mx-4 fs-5 text-dark"
                 : "mx-4 fs-5 text-white"
             }
             to={"/projects"}
@@ -53,13 +53,13 @@ const Main = () => {
           </Link>
           <Link
             className={
-              window.location.pathname === "/"
-                ? "mx-4 fs-5 text-warning"
+              window.location.pathname === "/contact"
+                ? "mx-4 fs-5 text-dark"
                 : "mx-4 fs-5 text-white"
             }
-            to={"/"}
+            to={"/contact"}
           >
-            About me
+            Contact
           </Link>
         </div>
       </div>

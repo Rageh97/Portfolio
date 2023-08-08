@@ -9,14 +9,10 @@ const Projects = () => {
     <>
       <Main />
       <MobileFooter />
-      {/* <section id="PROJECTS" className="p-2">
-        <Container className="mt-5 mb-5">
-          <h3 className="text-center mb-4 text">PROJECTS</h3> */}
+
       <div
-        style={{ backgroundColor: "#170b39" }}
-        className=" d-flex flex-wrap gap-3 align-items-center justify-content-center mt-5"
+        className=" d-flex flex-wrap projects_section gap-3 align-items-center justify-content-center mt-5"
       >
-        {/* <Col > */}
         <Card
           title={"Amazon Clone"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
@@ -43,9 +39,7 @@ const Projects = () => {
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/cars.png"}
           demoLink={"https://shopping-cars-next-nvmh673sg-rageh97.vercel.app/"}
-          githubLink={
-            "https://github.com/Rageh97/Shopping_Cars_NextJS"
-          }
+          githubLink={"https://github.com/Rageh97/Shopping_Cars_NextJS"}
         />
         <Card
           title={"Crud operation"}
@@ -61,11 +55,7 @@ const Projects = () => {
           demoLink={"https://store-app-js.vercel.app/"}
           githubLink={"https://github.com/Rageh97/STORE_APP"}
         />
-
-        {/* </Col> */}
       </div>
-      {/* </Container>
-      </section> */}
     </>
   );
 };

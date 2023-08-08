@@ -8,7 +8,7 @@ const MobileFooter = () => {
         <Link
           className={
             window.location.pathname === "/"
-              ? " fs-5 text-warning"
+              ? " fs-6 text_active"
               : " fs-6 text-white"
           }
           to={"/"}
@@ -18,7 +18,7 @@ const MobileFooter = () => {
         <Link
           className={
             window.location.pathname === "/skills"
-              ? " fs-5 text-warning"
+              ? " fs-6 text_active"
               : " fs-6 text-white"
           }
           to={"/skills"}
@@ -28,7 +28,7 @@ const MobileFooter = () => {
         <Link
           className={
             window.location.pathname === "/projects"
-              ? " fs-5 text-warning"
+              ? " fs-6 text_active"
               : " fs-6 text-white"
           }
           to={"/projects"}
@@ -38,7 +38,7 @@ const MobileFooter = () => {
         <Link
           className={
             window.location.pathname === "/contact"
-              ? " fs-5 text-warning"
+              ? " fs-6 text_active"
               : " fs-6 text-white"
           }
           to={"/contact"}

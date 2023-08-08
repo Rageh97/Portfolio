@@ -79,7 +79,7 @@ const Contacts = () => {
               />
             </div>
             <button
-              className="w-100 w-lg-25 bg_orange text-white d-flex align-items-center justify-content-center gap-3"
+              className="send_button linear_bg text-white d-flex align-items-center justify-content-center gap-3"
               type="submit"
             >
               {formStatus} <BsFillSendFill />

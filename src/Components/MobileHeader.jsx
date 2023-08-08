@@ -16,12 +16,12 @@ function CustomToggle({ children, eventKey }) {
   return (
     <button
       type="button"
+      className="custom_toggle"
       style={{
-        backgroundColor: "transparent",
         border: "none",
         position: "absolute",
-        top: "-6px",
-        right: "-14px",
+        top: "-2px",
+        right: "-11px",
       }}
       onClick={decoratedOnClick}
     >
@@ -32,35 +32,27 @@ function CustomToggle({ children, eventKey }) {
 const MobileHeader = () => {
   return (
     <div className="mobile_header position-relative d-flex d-xl-none w-100">
-    
       <Accordion className="w-100" defaultActiveKey="1">
         <Card className="w-100">
           <Card.Header className="w-100">
             <div className="d-flex align-items-center gap-3 w-100">
               <div className="profile_img">
                 <img
-                
                   className="w-100 rounded-4"
                   src="/assets/Profile-pic.jpg"
                   alt=""
                 />
               </div>
               <div className="d-flex flex-column who_iam">
-                <h6
-                 
-                  className="text-white  fw-bold mt-4 mb-3 w-100"
-                >
+                <h6 className="text-white  fw-bold mt-4 mb-3 w-100">
                   Mohamed Rageh
                 </h6>
-                <p
-                  style={{ backgroundColor: "#6131df"}}
-                  className=" w-100 text-white text-center px-1 py-1 rounded "
-                >
+                <p className=" w-100 header_position text-white text-center px-1 py-1 rounded ">
                   Frontend Developer
                 </p>
               </div>
               <CustomToggle eventKey="0">
-                <BsFillArrowDownCircleFill className="fs-5"/>
+                <BsFillArrowDownCircleFill className="fs-5" />
               </CustomToggle>
             </div>
           </Card.Header>

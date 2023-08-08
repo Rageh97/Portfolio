@@ -169,8 +169,8 @@ const Header = () => {
         />
         <h6   style={{ fontSize:"18px" }} className="text-white  fw-bold mt-4 mb-3">Mohamed Rageh</h6>
         <p
-          style={{ backgroundColor: "#6131df", fontSize:"15px" }}
-          className=" w-100 text-white text-center px-1 py-2 rounded "
+          // style={{ backgroundColor: "#6131df", fontSize:"15px" }}
+          className=" w-100 header_position text-white text-center px-1 py-2 rounded "
         >
           Frontend Developer
         </p>

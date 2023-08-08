@@ -15,9 +15,7 @@ const Skills = () => {
     <>
       <Main />
       <MobileFooter/>
-      {/* <Container style={{ marginBottom: "200px" }} className="mt-5">
-        <Row>
-          <Col className="d-flex flex-wrap align-items-center justify-content-center gap"> */}
+     
       <div
        data-aos="fade-up"
        data-aos-duration="2500"
@@ -32,7 +30,7 @@ const Skills = () => {
             >
               <div
                
-                className="p-3 bg-white text_dark d-flex  align-items-center justify-content-center"
+                className="p-3  text_dark d-flex  align-items-center justify-content-center"
                 style={{ width: "80px", height: "80px", borderRadius: "50%" }}
               >
                 {item.icon}
@@ -41,118 +39,9 @@ const Skills = () => {
             </div>
           </>
         ))}
-        {/* <div
-          data-aos="fade-up"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/html.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/css.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-cover"
-            src="/assets/JavaScript.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/React.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-down"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/next-js.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-down"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/bootstrap.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-down"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/Tailwind.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-down"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/material.png"
-            alt=""
-          />
-        </div>
-        <div
-          data-aos="fade-down"
-          data-aos-duration="2500"
-          className="p-3 bg-body shadow"
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-        >
-          <img
-            className="w-100 h-100 object-fit-contain"
-            src="/assets/redux.png"
-            alt=""
-          />
-        </div> */}
+     
       </div>
-      {/* </Col>
-        </Row>
-      </Container> */}
+  
     </>
   );
 };

@@ -6,12 +6,25 @@
   font-family: "Rubik", sans-serif;
 }
 :root {
+  --bg-body: #1a1a1a;
+  --bg-containers: #2f2f2f;
+  --text-orange: #42d392;
+  --text-white: #aac8e4;
+  --bg-orange: #647eff;
+  --linear-bg: linear-gradient(315deg, #42d392 25%, #647eff);
+}
+
+/* background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; */
+/* :root {
   --bg-body: #0b051d;
   --bg-containers: #170b39;
   --text-orange: #00b3ff;
   --text-white: #ffffff;
   --bg-orange: #6131df;
-}
+} */
 /* :root {
   --bg-body: #0f0f0f;
   --bg-containers: #242424;
@@ -28,12 +41,17 @@ body {
   right: 0;
   left: 0;
   width: 100%;
-  background-color: var(--bg-orange);
+  background: var(--linear-bg);
+  background-clip: text;
   border-radius: 20px 20px 0 0;
   z-index: 1;
   padding: 10px;
 }
-
+.header_position {
+  font-size: 15px;
+  background: var(--linear-bg);
+  background-clip: text;
+}
 .parent {
   display: flex;
   align-items: center;
@@ -45,14 +63,17 @@ body {
   background-color: var(--bg-containers);
   border-radius: 15px;
   border: 1px solid rgb(67, 67, 67);
-  /* z-index: 1; */
 }
-
+.linear_bg {
+  background: var(--linear-bg);
+  background-clip: text;
+}
 .text_orange {
   color: var(--text-orange);
 }
 .text_dark {
-  color: var(--bg-orange);
+  background: var(--linear-bg);
+  background-clip: text;
 }
 
 .bg_orange {
@@ -61,12 +82,21 @@ body {
 .icon {
   background-color: #323232;
   color: var(--text-orange);
-  box-shadow: inset 2px 2px 2px rgb(71, 71, 71);
+  box-shadow: inset 2px 2px 2px rgb(70, 118, 141);
 }
 .main_header {
-  background-color: var(--bg-orange);
+  background: linear-gradient(315deg, var(--text-orange) 25%, var(--bg-orange));
+  background-clip: text;
 
   border-radius: 0 0 0 20px;
+}
+.custom_toggle {
+  background: var(--linear-bg);
+  background-clip: text;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
 }
 .neumer-input {
   border: none;
@@ -101,12 +131,11 @@ a {
   left: 5px;
   border-radius: 2px;
 }
-button {
+.send_button {
   padding: 5px;
   border-radius: 30px !important;
   border: none;
-  background-color: rgb(51, 51, 51);
-  color: var(--text-orange);
+  width: 25%;
   border: 1px solid rgb(113, 113, 113);
 }
 .card {
@@ -125,7 +154,6 @@ button {
 .Accordion {
   background-color: transparent !important;
   border: none !important;
-  
 }
 .who_iam h6 {
   font-size: 18px;
@@ -141,9 +169,14 @@ button {
 .profile_img {
   border-radius: 20px;
 }
-canvas#canvas {
-  display: block;
-  background: #0d0d0d;
+.text_active {
+  color: #ffffff;
+  padding: 4px;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(315deg,#f2ff00 ,rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 380px) {
   .who_iam {
@@ -155,19 +188,23 @@ canvas#canvas {
   .who_iam p {
     font-size: 8px;
   }
- 
+
   .profile_img {
-   border-radius: 50px;
+    border-radius: 50px;
   }
-  .profile_img img{
-   border-radius: 50px;
+  .profile_img img {
+    border-radius: 50px;
   }
 }
-.card-img:hover{
- padding: 10px;
- opacity: 70%;
-  transition: .5s;
+@media screen and (max-width: 480px) {
+  .send_button {
+    width: 100%;
+  }
+}
+.card-img:hover {
+  padding: 10px;
+  opacity: 70%;
+  transition: 0.5s;
   cursor: pointer;
 }
 /* ........................Animation..................................... */
-
