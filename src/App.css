@@ -66,14 +66,14 @@ body {
   border: 1px solid rgb(67, 67, 67);
 }
 .linear_bg {
-  background: var(--linear-bg);
+  background: linear-gradient(315deg,#42d392 25%,#647eff);
   background-clip: text;
 }
 .text_orange {
   color: var(--text-orange);
 }
 .text_dark {
-  background: var(--linear-bg);
+  background: linear-gradient(315deg,#42d392 25%,#647eff);
   background-clip: text;
 }
 
@@ -93,7 +93,7 @@ body {
   border-radius: 0 0 0 20px;
 }
 .custom_toggle {
-  background: var(--linear-bg);
+  background: linear-gradient(315deg,#42d392 25%,#647eff);
   background-clip: text;
   border-radius: 50%;
   padding: 4px;
