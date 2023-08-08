@@ -43,7 +43,7 @@ body {
   width: 100%;
   background: var(--bg-containers);
   border-top: 1px solid var(--text-orange);
-  background-clip: text;
+
   border-radius: 20px 20px 0 0;
   z-index: 1;
   padding: 10px;
@@ -51,7 +51,8 @@ body {
 .header_position {
   font-size: 15px;
   background: var(--linear-bg);
-  background-clip: text;
+ 
+  
 }
 .parent {
   display: flex;
@@ -66,15 +67,15 @@ body {
   border: 1px solid rgb(67, 67, 67);
 }
 .linear_bg {
-  background: linear-gradient(315deg,#42d392 25%,#647eff);
-  background-clip: text;
+  background: var(--linear-bg);
+
 }
 .text_orange {
   color: var(--text-orange);
 }
 .text_dark {
-  background: linear-gradient(315deg,#42d392 25%,#647eff);
-  background-clip: text;
+  background: var(--linear-bg);
+
 }
 
 .bg_orange {
@@ -93,8 +94,8 @@ body {
   border-radius: 0 0 0 20px;
 }
 .custom_toggle {
-  background: linear-gradient(315deg,#42d392 25%,#647eff);
-  background-clip: text;
+  background: var(--linear-bg);
+
   border-radius: 50%;
   padding: 4px;
   display: flex;
