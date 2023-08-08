@@ -18,10 +18,7 @@ function CustomToggle({ children, eventKey }) {
       type="button"
       className="custom_toggle"
       style={{
-        border: "none",
-        position: "absolute",
-        top: "-2px",
-        right: "-11px",
+        
       }}
       onClick={decoratedOnClick}
     >

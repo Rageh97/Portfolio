@@ -41,7 +41,8 @@ body {
   right: 0;
   left: 0;
   width: 100%;
-  background: var(--linear-bg);
+  background: var(--bg-containers);
+  border-top: 1px solid var(--text-orange);
   background-clip: text;
   border-radius: 20px 20px 0 0;
   z-index: 1;
@@ -85,9 +86,10 @@ body {
   box-shadow: inset 2px 2px 2px rgb(70, 118, 141);
 }
 .main_header {
-  background: linear-gradient(315deg, var(--text-orange) 25%, var(--bg-orange));
-  background-clip: text;
-
+  /* background: linear-gradient(315deg, var(--text-orange) 25%, var(--bg-orange)); */
+  /* background-clip: text; */
+  background-color: transparent;
+  border-bottom: 1px solid var(--text-orange);
   border-radius: 0 0 0 20px;
 }
 .custom_toggle {
@@ -97,6 +99,10 @@ body {
   padding: 4px;
   display: flex;
   align-items: center;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: -11px;
 }
 .neumer-input {
   border: none;
@@ -173,10 +179,14 @@ a {
   color: #ffffff;
   padding: 4px;
   border-radius: 10px;
-  background: -webkit-linear-gradient(315deg,#f2ff00 ,rgb(255, 255, 255));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--text-orange),
+    var(--bg-orange)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 380px) {
   .who_iam {

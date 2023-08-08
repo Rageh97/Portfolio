@@ -24,7 +24,7 @@ const Main = () => {
           <Link
             className={
               window.location.pathname === "/"
-                ? "mx-4 fs-5 text-dark"
+                ? "mx-4 fs-5 text_active"
                 : "mx-4 fs-5 text-white"
             }
             to={"/"}
@@ -34,7 +34,7 @@ const Main = () => {
           <Link
             className={
               window.location.pathname === "/skills"
-                ? "mx-4 fs-5 text-dark"
+                ? "mx-4 fs-5 text_active"
                 : "mx-4 fs-5 text-white"
             }
             to={"/skills"}
@@ -44,7 +44,7 @@ const Main = () => {
           <Link
             className={
               window.location.pathname === "/projects"
-                ? "mx-4 fs-5 text-dark"
+                ? "mx-4 fs-5 text_active"
                 : "mx-4 fs-5 text-white"
             }
             to={"/projects"}
@@ -54,7 +54,7 @@ const Main = () => {
           <Link
             className={
               window.location.pathname === "/contact"
-                ? "mx-4 fs-5 text-dark"
+                ? "mx-4 fs-5 text_active"
                 : "mx-4 fs-5 text-white"
             }
             to={"/contact"}
