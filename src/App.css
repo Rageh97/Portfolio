@@ -219,7 +219,7 @@ a {
     width: 100%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
   .send_button {
     width: 100%;
   }
@@ -228,6 +228,13 @@ a {
   }
   .who_iam p {
     font-size: 9px;
+  }
+  .profile_img {
+    border-radius: 50px;
+    width: 40%;
+  }
+  .profile_img img {
+    border-radius: 50px;
   }
 }
 .card-img:hover {
