@@ -215,12 +215,21 @@ a {
   .profile_img img {
     border-radius: 50px;
   }
-}
-/* @media screen and (max-width: 480px) {
   .send_button {
     width: 100%;
   }
-} */
+}
+@media screen and (max-width: 480px) {
+  .send_button {
+    width: 100%;
+  }
+  .who_iam h6 {
+    font-size: 12px;
+  }
+  .who_iam p {
+    font-size: 9px;
+  }
+}
 .card-img:hover {
   padding: 10px;
   opacity: 70%;
