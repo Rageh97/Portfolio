@@ -42,6 +42,13 @@ const Projects = () => {
           githubLink={"https://github.com/Rageh97/Shopping_Cars_NextJS"}
         />
         <Card
+          title={"Realstate App"}
+          description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
+          imageSrc={"/assets/realstate.png"}
+          demoLink={"https://realstate-xi.vercel.app/"}
+          githubLink={"https://github.com/Rageh97/Realstate_App"}
+        />
+        <Card
           title={"Crud operation"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/crud.png"}
