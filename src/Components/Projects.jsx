@@ -28,6 +28,13 @@ const Projects = () => {
           githubLink={"https://github.com/Rageh97/Youtube_clone"}
         />
         <Card
+          title={"E-Learning Moodle"}
+          description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
+          imageSrc={"/assets/LMS.png"}
+          demoLink={"https://lms-flame-ten.vercel.app/"}
+          githubLink={"https://github.com/Rageh97/lms"}
+        />
+        <Card
           title={"Facebook Clone"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/facebook.png"}
