@@ -42,11 +42,18 @@ const Projects = () => {
           githubLink={"https://github.com/Rageh97/Facebook_clone"}
         />
         <Card
+          title={"MasarTech Landing"}
+          description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
+          imageSrc={"/assets/Masar.png"}
+          demoLink={"https://landing-academy-tau.vercel.app/"}
+          githubLink={"https://github.com/Rageh97/Shopping_Cars_NextJS"}
+        />
+        <Card
           title={"Cars Shopping"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/cars.png"}
           demoLink={"https://shopping-cars-next-nvmh673sg-rageh97.vercel.app/"}
-          githubLink={"https://github.com/Rageh97/Shopping_Cars_NextJS"}
+          githubLink={"https://github.com/Rageh97/Landing_Academy"}
         />
         <Card
           title={"Realstate App"}

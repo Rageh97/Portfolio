@@ -20,7 +20,7 @@ export default function Card({
 
   return (
     <>
-      <div data-aos="zoom-in-down" data-aos-duration="2500" className="card mb-3">
+      <div data-aos="fade-up" data-aos-duration="1500" className="card mb-3">
         <img
           className="w-100 card-img mb-1"
           src={imageSrc}
