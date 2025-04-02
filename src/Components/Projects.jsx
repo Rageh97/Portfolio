@@ -17,7 +17,7 @@ const Projects = () => {
           title={"Amazon Clone"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/Amazon.png"}
-          demoLink={"https://amazon-clone-react-js-two.vercel.app/"}
+          demoLink={"https://amazon-clone-react-js-iidk-g2fa2gnal-rageh97s-projects.vercel.app/"}
           githubLink={"https://github.com/Rageh97/Amazon_Clone-React-js"}
         />
         <Card
