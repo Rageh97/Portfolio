@@ -6,9 +6,11 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { BsFillBootstrapFill } from "react-icons/bs";
-import { DiCss3 } from "react-icons/di";
+import { DiCss3 , DiMongodb } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiMui, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 
 export const skills = [
   { icon: <AiFillHtml5 className="fs-2 " />, title: "HTML" },
@@ -23,4 +25,7 @@ export const skills = [
   { icon: <SiMui  className="fs-2 "/>, title: "MaterialUI" },
   { icon: <BiGitMerge className="fs-2 " />, title: "Git" },
   { icon: <AiFillGithub className="fs-2 " />, title: "Github" },
+  { icon: <DiMongodb  className="fs-2 " />, title: "MongoDb" },
+  { icon: <FaNode  className="fs-2 " />, title: "Nodejs" },
+  { icon: <SiExpress  className="fs-2 " />, title: "Expressjs" },
 ];

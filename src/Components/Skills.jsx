@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { useEffect } from "react";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Main from "./Main";

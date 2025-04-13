@@ -1,5 +1,3 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import Card from "./Card";
 import Main from "./Main";
 import MobileFooter from "./MobileFooter";
@@ -10,18 +8,18 @@ const Projects = () => {
       <Main />
       <MobileFooter />
 
-      <div
-        className=" d-flex flex-wrap projects_section gap-3 align-items-center justify-content-center mt-5"
-      >
+      <div className=" d-flex flex-wrap projects_section gap-3 align-items-center justify-content-center mt-5">
         <Card
-          title={"Amazon Clone"}
+          title={"E-commerce App"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/Amazon.png"}
-          demoLink={"https://amazon-clone-react-js-iidk-g2fa2gnal-rageh97s-projects.vercel.app/"}
+          demoLink={
+            "https://amazon-clone-react-js-iidk-g2fa2gnal-rageh97s-projects.vercel.app/"
+          }
           githubLink={"https://github.com/Rageh97/Amazon_Clone-React-js"}
         />
         <Card
-          title={"Youtube Clone"}
+          title={"Youtube"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/youtube.png"}
           demoLink={"https://youtube-clone-d9uo-8pklr74ur-rageh97.vercel.app/"}
@@ -35,12 +33,20 @@ const Projects = () => {
           githubLink={"https://github.com/Rageh97/lms"}
         />
         <Card
-          title={"Facebook Clone"}
+          title={"Facebook"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/facebook.png"}
           demoLink={"https://facebook-clone-8y5lauh4q-rageh97.vercel.app/"}
           githubLink={"https://github.com/Rageh97/Facebook_clone"}
         />
+        <Card
+          title={"ChancePlay Store"}
+          description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
+          imageSrc={"/assets/chance.png"}
+          demoLink={"https://chanceplay.vercel.app/"}
+          // githubLink={"https://github.com/Rageh97/Facebook_clone"}
+        />
+
         <Card
           title={"MasarTech Landing"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
