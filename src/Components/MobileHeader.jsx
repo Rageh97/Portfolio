@@ -43,7 +43,7 @@ const MobileHeader = () => {
                   Mohamed Rageh
                 </h6>
                 <p className=" w-100 header_position text-white text-center px-1 py-1 rounded ">
-                  Frontend Developer
+                  Software Engineer
                 </p>
               </div>
               <CustomToggle eventKey="0">

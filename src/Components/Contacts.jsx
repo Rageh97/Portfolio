@@ -111,9 +111,11 @@ const Contacts = () => {
             </div>
           </a>
           {/* <IoLogoWhatsapp className="bg_orange p-2  rounded fs-2 shadow text-dark" /> */}
+        <a href="https://wa.me/201030771963">
           <div className="px-2 py-1 rounded icon me-2">
             <IoLogoWhatsapp className="text_orange fs-3 p-1  " />
           </div>
+        </a>
         </div>
       </div>
     </>

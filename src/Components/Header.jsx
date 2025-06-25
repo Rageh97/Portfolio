@@ -172,7 +172,7 @@ const Header = () => {
           // style={{ backgroundColor: "#6131df", fontSize:"15px" }}
           className=" w-100 header_position text-white text-center px-1 py-2 rounded "
         >
-          Frontend Developer
+          Software Engineer
         </p>
       </div>
       <hr className=" text-white" />

@@ -10,6 +10,15 @@ const Projects = () => {
 
       <div className=" d-flex flex-wrap projects_section gap-3 align-items-center justify-content-center mt-5">
         <Card
+          title={"Saas Platform"}
+          description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
+          imageSrc={"/assets/nex.png"}
+          demoLink={
+            "https://app.nexustoolz.com/signin"
+          }
+          // githubLink={"https://github.com/Rageh97/Amazon_Clone-React-js"}
+        />
+        <Card
           title={"E-commerce App"}
           description={"loremjdgsfdshjfbbncvposakdkdlgfjdsds;f"}
           imageSrc={"/assets/Amazon.png"}
